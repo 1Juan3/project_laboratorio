@@ -1,4 +1,5 @@
 <x-layout titulo="iniciar sesion">
+  <h1>hola mundo</h1>
     <div style="height: 80vh; display: flex; justify-content: center; align-items: center;">
        <a href="/googe-auth/redirect" style="text-decoration: none; "> <button class="button" style="font-size: 10px;">
             <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
