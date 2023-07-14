@@ -1,0 +1,19 @@
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar{
+    gap: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
