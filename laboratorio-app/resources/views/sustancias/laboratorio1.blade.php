@@ -1,4 +1,4 @@
-<x-layout titulo="{{$nombre_laboratorio}}">
+<x-layout titulo="{{ $nombre_laboratorio }}">
     <x-slot name="css">
         <link rel="stylesheet" href="{{ asset('css/laboratorio1.css') }}">
         <link rel="stylesheet"
@@ -12,8 +12,7 @@
         <strong style="width: 20%">Lista de reactivos en el {{ $nombre_laboratorio }}</strong>
 
 
-        <a  href="{{ route('getMatriz', ['nombre_laboratorio' => $nombre_laboratorio]) }}"
-            target="_blank">
+        <a href="{{ route('getMatriz', ['nombre_laboratorio' => $nombre_laboratorio]) }}" target="_blank">
 
             Ver Matriz de compatibilidad
         </a>
@@ -229,7 +228,8 @@
                         <td>{{ $item->estado_sustancia }}</td>
                         <td>{{ $item->frecuencia_uso }}</td>
                         <td>{{ $item->unidad_medida }}</td>
-                        <td><a style="color:black;" href="{{ route('viewEditReactivo', $item->id) }}" ><i class="bi bi-pencil-square" ></i></a></td>
+                        <td><a style="color:black;" href="{{ route('viewEditReactivo', $item->id) }}"><i
+                                    class="bi bi-pencil-square"></i></a></td>
                 @endforeach
                 </tr>
             </tbody>
@@ -259,7 +259,8 @@
                 // Setup - add a text input to each footer cell
                 $('#reactivos tfoot th').each(function() {
                     var title = $(this).text();
-                    $(this).html('<input type="text" style="margin-left:10px;" placeholder="Buscar ' + title + '" />');
+                    $(this).html('<input type="text" style="margin-left:10px;" placeholder="Buscar ' + title +
+                        '" />');
                 });
                 $('#reactivos').DataTable({
 
@@ -267,7 +268,7 @@
                     autoWidth: false,
                     fixedHeader: true,
                     processing: true,
-                   
+
                     "language": {
                         "lengthMenu": "Mostrar _MENU_ reactivos por pagina",
                         "zeroRecords": "No se encontraron registros - Lo siento",

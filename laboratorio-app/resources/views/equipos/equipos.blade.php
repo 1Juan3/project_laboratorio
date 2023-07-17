@@ -179,7 +179,7 @@
         <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
         <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
         <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
-    {{-- en caso de que quiera agregar botones a la aplicion de exportacion --}}
+        {{-- en caso de que quiera agregar botones a la aplicion de exportacion --}}
         {{-- <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
@@ -200,7 +200,7 @@
                     autoWidth: false,
                     fixedHeader: true,
                     processing: true,
-    
+
                     "language": {
                         "lengthMenu": "Mostrar _MENU_ reactivos por pagina",
                         "zeroRecords": "No se encontraron registros - Lo siento",

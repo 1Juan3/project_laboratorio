@@ -1,11 +1,10 @@
-
-.boton{
+.boton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.buscar{
+.buscar {
     gap: 200px;
     display: flex;
     justify-content: center;
@@ -13,7 +12,7 @@
 }
 
 tfoot input {
-        width: 100%;
-        padding: 3px;
-        box-sizing: border-box;
-    }
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}

@@ -81,20 +81,20 @@
 
     <section class="laboratorios">
         @foreach ($informacion as $laboratorio)
-        <a href="{{ route('view', $laboratorio->nombre_laboratorio) }}" style="text-decoration: none">
-            <div class="card" style="height: 300px; background-image: url('{{ asset('images/' . $laboratorio->imagen) }}');
+            <a href="{{ route('view', $laboratorio->nombre_laboratorio) }}" style="text-decoration: none">
+                <div class="card"
+                    style="height: 300px; background-image: url('{{ asset('images/' . $laboratorio->imagen) }}');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 display: flex;
                 align-items: center;
-                justify-content: center;"
-                >
-                {{ $laboratorio->nombre_laboratorio }}
-            </div>
-        </a>
-    @endforeach
-    
+                justify-content: center;">
+                    {{ $laboratorio->nombre_laboratorio }}
+                </div>
+            </a>
+        @endforeach
+
 
     </section>
 

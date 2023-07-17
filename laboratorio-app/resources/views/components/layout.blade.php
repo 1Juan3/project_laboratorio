@@ -31,7 +31,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <strong><a class="nav-link" href="{{ route('verInventario') }}" style="color: white;">Equipos</a></strong>
+                        <strong><a class="nav-link" href="{{ route('verInventario') }}"
+                                style="color: white;">Equipos</a></strong>
                     </li>
                     <li class="nav-item">
                         <strong><a class="nav-link" href="#" style="color: white;"></a></strong>
@@ -40,12 +41,14 @@
                         <strong><a class="nav-link" href="#" style="color: white;"></a></strong>
                     </li>
                     @auth
-                    <li  class="nav-item">
-                     <form action="{{ route('logout') }}" method="POST">
-                       @csrf
-                      <button  class="nav-link" type="submit" style="border:none; background-color: transparent; color:white;">  <strong >Cerrar sesión</strong ></button> 
-                   </form>
-                    </li>
+                        <li class="nav-item">
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button class="nav-link" type="submit"
+                                    style="border:none; background-color: transparent; color:white;"> <strong>Cerrar
+                                        sesión</strong></button>
+                            </form>
+                        </li>
                     @endauth
                 </ul>
 
